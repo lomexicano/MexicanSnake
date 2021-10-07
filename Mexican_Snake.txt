@@ -297,15 +297,14 @@ do();
 						wait(%#slotclick_delay%t);
 					endif;
 				endif;
-				ifmatches("%ITEM%","[a-z]");
-					getslot("air",#empty);
-				else;
-					getslot(0,#empty);
-				endif;
-				if(#empty < 0);
+				
+				//Removing the use o 'getslot' with 'air' here because it doesn't work on 1.8	;
+				arraysize(#slots_snake[],#size);
+				if(#size >= 54);
 					log("&f&l[&2&lMA&f&lC&4&lRO&f&l] &aCongratulations, you win!");
 					break;
 				endif;
+				
 				do();
 					random(#i,0,53);
 					indexof(#slots_snake[],#pos,%#i%);
