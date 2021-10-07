@@ -7,7 +7,7 @@
 	- Open one of the gray keys;
 	- Install the following code:
 		 `$$<Mexican_Snake.txt>`
-	- Click in "Edit File";
+	- Click the button `Edit File`;
 	- Type `Mexican_Snake` and press `Create`;
 	- Paste the script and Save.
 - **Usage**
