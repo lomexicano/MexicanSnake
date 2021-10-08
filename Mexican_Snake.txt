@@ -298,10 +298,11 @@ do();
 					endif;
 				endif;
 				
-				//I've Removing the use o 'getslot' with 'air' here because it doesn't work on 1.8	;
+				//I removed the use of 'getslot' with 'air' because it doesn't work on 1.8	;
 				arraysize(#slots_snake[],#size2);
 				if(#size2 >= 54);
 					log("&f&l[&2&lMA&f&lC&4&lRO&f&l] &aCongratulations, you win!");
+					achievementget("§2You Win!","%&id_body%");
 					break;
 				endif;
 				
